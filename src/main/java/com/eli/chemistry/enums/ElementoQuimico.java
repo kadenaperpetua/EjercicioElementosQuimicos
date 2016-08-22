@@ -13,7 +13,17 @@ public enum ElementoQuimico {
     ALUMINIO("Aluminio","Al",13, SerieQuimica.METAL),
     COBRE("Cobre","C",19,SerieQuimica.TRANSICION);
 
-    ElementoQuimico(String nombre, String simbolo, int numeroAtomico, SerieQuimica serieQuimica) {
+    private String nombre;
+    private String simbolo;
+    private int numeroAtomico;
+    private SerieQuimica serieQuimica;
 
+    ElementoQuimico(String nombre, String simbolo, int numeroAtomico, SerieQuimica serieQuimica) {
+        this.nombre=nombre;
+        this.simbolo=simbolo;
+        this.numeroAtomico=numeroAtomico;
+        this.serieQuimica=serieQuimica;
     }
+
+    
 }

@@ -8,8 +8,14 @@ public enum SerieQuimica {
     ALCALINO("Alcalino"),
     ALCALINOTERREO("Alcalinotérreo"),
     HALOGENO("Halógeno"),
-    GAS("Gas noble"),;
+    GAS("Gas noble");
 
-    SerieQuimica(String serieQuimica) {
+    private String serie;
+
+    SerieQuimica(String serie) {
+        this.serie = serie;
+    }
+    public String getSerie() {
+        return serie;
     }
 }
