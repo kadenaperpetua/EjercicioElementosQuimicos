@@ -44,4 +44,13 @@ public enum ElementoQuimico {
         }
     }
 
+    public static String getSerieQuimica(String nombre) {
+        nombre = nombre.toUpperCase();
+        try {
+            return ElementoQuimico.valueOf(nombre).serieQuimica.getSerie();
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException("No se ha encontrado el elemento");
+        }
+    }
+
 }

@@ -8,12 +8,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String miElemento ="aluminio";
+        String miElemento ="bodrio";
 
         try {
             System.out.println(ElementoQuimico.getSimbolo(miElemento));
             System.out.println(ElementoQuimico.getNumeroAtomico(miElemento));
-
+            System.out.println(ElementoQuimico.getSerieQuimica(miElemento));
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
