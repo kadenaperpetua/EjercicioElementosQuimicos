@@ -34,5 +34,14 @@ public enum ElementoQuimico {
             throw new IllegalArgumentException("No se ha encontrado el elemento");
         }
     }
-    
+
+    public static int getNumeroAtomico(String nombre) {
+        nombre = nombre.toUpperCase();
+        try {
+            return ElementoQuimico.valueOf(nombre).numeroAtomico;
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException("No se ha encontrado el elemento");
+        }
+    }
+
 }

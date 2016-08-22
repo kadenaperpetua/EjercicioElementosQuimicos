@@ -12,6 +12,7 @@ public class Main {
 
         try {
             System.out.println(ElementoQuimico.getSimbolo(miElemento));
+            System.out.println(ElementoQuimico.getNumeroAtomico(miElemento));
 
         }catch(Exception e){
             System.out.println(e.getMessage());
